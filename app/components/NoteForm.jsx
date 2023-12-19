@@ -10,9 +10,7 @@ const NoteForm = () => {
 
   return (
     <>
-      <h1 className="form-heading mb-4 text-center fw-bold">
-        Create Your Own Note
-      </h1>
+      <h1 className="form-heading mb-4 text-center fw-bold">Create A Note</h1>
       <Form method="post" id="note-form">
         {data?.message && <p className="text-danger fw-bold">{data.message}</p>}
         <div className="mb-3">

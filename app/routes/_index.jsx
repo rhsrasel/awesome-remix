@@ -1,7 +1,7 @@
 import { NavLink } from "@remix-run/react";
 
 export const meta = () => {
-  return [{ title: "New Remix App" }];
+  return [{ title: "Remix Note App" }];
 };
 
 export default function Index() {
@@ -13,7 +13,10 @@ export default function Index() {
           <p className="text">
             Try our app and never loose track of your notes again!
           </p>
-          <NavLink to="/notes" className="btn btn-warning py-2 px-5">
+          <NavLink
+            to="/notes"
+            className="btn btn-warning py-2 px-5 fw-bold mt-2"
+          >
             Try Now!
           </NavLink>
         </div>

@@ -60,7 +60,7 @@ export const loader = async () => {
     throw json(
       { message: "Couldn't find any notes." },
       {
-        status: 400,
+        status: 404,
         statusText: "Not found",
       }
     );
@@ -99,4 +99,14 @@ export function ErrorBoundary() {
       </div>
     </main>
   );
+}
+
+export function meta({ data }) {
+  return [
+    { title: "All Notes" },
+    {
+      name: "description",
+      content: "Manage your notes with ease",
+    },
+  ];
 }
