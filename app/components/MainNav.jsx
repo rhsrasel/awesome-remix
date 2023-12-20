@@ -14,6 +14,11 @@ const MainNav = () => {
             Notes
           </NavLink>
         </li>
+        <li className="nav-item">
+          <NavLink to="/blog" className="nav-link">
+            Blog
+          </NavLink>
+        </li>
       </ul>
     </nav>
   );
